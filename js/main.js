@@ -9,15 +9,15 @@ var root = new Vue({
             inH3: 'Inserire link all\'immagine',
             inButton: 'Visualizza',
         },
+        imgUrl: '',
         myClasses: 'display-none'
     },
     methods: {
         pickImgUrl() {
-            var myImg = document.getElementById('image');
             var myInput = document.getElementById('npt');
 
             this.myClasses = 'display-block beautify-img';
-            myImg.setAttribute('src',myInput.value);
+            this.imgUrl = myInput.value;
         }
     }
 });
