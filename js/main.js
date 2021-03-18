@@ -16,8 +16,12 @@ var root = new Vue({
         pickImgUrl() {
             var myInput = document.getElementById('npt');
 
-            this.myClasses = 'display-block beautify-img';
             this.imgUrl = myInput.value;
+            this.myClasses = 'display-block beautify-img';
+
+            if (myInput.value == '') {
+                this.myClasses = 'display-none';
+            }
         }
     }
 });
