@@ -8,7 +8,6 @@ var root = new Vue({
             inH1: 'Visualizzatore di immagini',
             inH3: 'Inserire link all\'immagine',
             inButton: 'Visualizza',
-            imgUrl: ''
         },
         myClasses: 'display-none'
     },
