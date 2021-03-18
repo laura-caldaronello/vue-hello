@@ -13,7 +13,7 @@
     <div id="root">
         <h1>{{message.inH1}}</h1>
         <h3>{{message.inH3}}</h3>
-        <input id="npt" type="text" v-model="message.imgUrl">
+        <input id="npt" type="text">
         <button @click="pickImgUrl">{{message.inButton}}</button>
         <img id="image" :class="myClasses" :src="imgUrl">
     </div>
